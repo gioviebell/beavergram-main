@@ -1,0 +1,85 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>BeaverGram</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dc4405;">
+                <a class="navbar-brand" href="index.html">BeaverGram</a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="users.html">Users</a>
+                    <a class="nav-item nav-link" href="followers.html">Followers</a>
+                    <a class="nav-item nav-link" href="following.html">Following</a>
+                    <a class="nav-item nav-link" href="posts.html">Posts</a>
+                    <a class="nav-item nav-link" href="profileEngagement.html">Profile Engagement</a>
+                    <a class="nav-item nav-link" href="postEngagement.html">Post Engagement</a>
+                    <a class="nav-item nav-link" href="userFollowers.html">User Followers</a>
+                    <a class="nav-item nav-link" href="usersFollowing.html">User Following</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Following Table -->
+        <h2>Users Following</h2>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>followingID</th>
+                    <th>userID</th>
+                    <th>totalFollowingAccount</th>
+                    <th>dateFollowing</th>
+                </tr>
+            </thead>
+            <tbody id="following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!-- Temporary dummy data entered-->
+                  <td>1</td>
+                  <td>2</td>
+                  <td>20</td>
+                  <td>01-20-2024</td>
+            </tbody>
+            <tbody id="following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!-- Temporary dummy data entered-->
+                  <td>2</td>
+                  <td>2</td>
+                  <td>306</td>
+                  <td>10-08-2024</td>
+            </tbody>
+            <tbody id="following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!-- Temporary dummy data entered-->
+                  <td>5</td>
+                  <td>2</td>
+                  <td>15</td>
+                  <td>05-10-2024</td>
+            </tbody>
+        </table>
+        <a href="following.html" onclick="showform('insert')">Back to Following</a>
+    </div>
+    
+
+    <footer class="container">
+        <p>&copy; 2024 BeaverGram by Giovanita Bell and Kevin Lee</p>
+    </footer>
+
+    <!-- Link to Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JS file to fetch and display data -->
+    <script src="app.js"></script>
+</body>
+
+</html>

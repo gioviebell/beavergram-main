@@ -1,0 +1,202 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>BeaverGram</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div id="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dc4405;">
+                <a class="navbar-brand" href="index.html">BeaverGram</a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="users.html">Users</a>
+                    <a class="nav-item nav-link" href="followers.html">Followers</a>
+                    <a class="nav-item nav-link" href="following.html">Following</a>
+                    <a class="nav-item nav-link" href="posts.html">Posts</a>
+                    <a class="nav-item nav-link" href="profileEngagement.html">Profile Engagement</a>
+                    <a class="nav-item nav-link" href="postEngagement.html">Post Engagement</a>
+                    <a class="nav-item nav-link" href="userFollowers.html">User Followers</a>
+                    <a class="nav-item nav-link" href="usersFollowing.html">User Following</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Users Table -->
+        <h2>Users</h2>
+        <a href="#" onclick="showForm('insert')">Add User</a>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Edit User</th>
+                    <th>Delete User</th>
+                    <th>userID</th>
+                    <th>userName</th>
+                    <th>dateCreated</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody id="users-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td><a href="#" onclick="showForm('insert')">Edit User</a></td>
+                 <td><a href="#" onclick="showForm('insert')">Delete User</a></td>
+                 <td>1</td>
+                 <td>benbeav</td>
+                 <td>12-12-2024</td>
+                 <td>bennybeaver@osu.com</td>
+            </tbody>
+            <tbody id="users-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td><a href="#" onclick="showForm('insert')">Edit User</a></td>
+                 <td><a href="#" onclick="showForm('insert')">Delete User</a></td>
+                 <td>2</td>
+                 <td>moo_deng</td>
+                 <td>03-15-2024</td>
+                 <td>moodeng@osu.com</td>
+            </tbody>
+            <tbody id="users-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td><a href="#" onclick="showForm('insert')">Edit User</a></td>
+                 <td><a href="#" onclick="showForm('insert')">Delete User</a></td>
+                 <td>3</td>
+                 <td>penguinpe</td>
+                 <td>08-19-2024</td>
+                 <td>pestopenguin@osu.com</td>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <!-- Users - Followers Intersection Table -->
+        <h2>Users - Followers Intersection</h2>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>userFollowerId</th>
+                    <th>followerId</th>
+                    <th>Users_userId</th>
+                </tr>
+            </thead>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>1</td>
+                 <td>1</td>
+                 <td>1</td>
+            </tbody>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>2</td>
+                 <td>2</td>
+                 <td>2</td>
+            </tbody>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>3</td>
+                 <td>3</td>
+                 <td>3</td>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <!-- Users - Following Intersection Table -->
+        <h2>Users - Following Intersection</h2>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>userFollowingId</th>
+                    <th>followingId</th>
+                    <th>userId</th>
+                </tr>
+            </thead>
+            <tbody id="users-following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>1</td>
+                 <td>1</td>
+                 <td>1</td>
+            </tbody>
+            <tbody id="users-following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>2</td>
+                 <td>2</td>
+                 <td>2</td>
+            </tbody>
+            <tbody id="users-following-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>3</td>
+                 <td>3</td>
+                 <td>3</td>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <!-- Users - Post Engagement Intersection Table -->
+        <h2>Users - Post Engagement Intersection</h2>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>userPostId</th>
+                    <th>postId</th>
+                    <th>userId</th>
+                    <th>Users_userId</th>
+                    <th>PostEngagements_postId</th>
+                </tr>
+            </thead>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>1</td>
+                 <td>1</td>
+                 <td>1</td>
+                 <td>1</td>
+                 <td>1</td>
+            </tbody>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>2</td>
+                 <td>2</td>
+                 <td>2</td>
+                 <td>2</td>
+                 <td>2</td>
+            </tbody>
+            <tbody id="users-followers-table-body">
+                <!-- Data rows will be injected here by JavaScript -->
+                 <!--Enter temporary dummy data-->
+                 <td>3</td>
+                 <td>3</td>
+                 <td>3</td>
+                 <td>3</td>
+                 <td>3</td>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="container">
+        <p>&copy; 2024 BeaverGram by Giovanita Bell and Kevin Lee</p>
+    </footer>
+</body>
+
+</html>
